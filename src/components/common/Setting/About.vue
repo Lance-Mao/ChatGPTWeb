@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: maolw
+ * @Date: 2023-03-22 16:40:10
+ * @LastEditors: maolw
+ * @LastEditTime: 2023-03-22 16:47:10
+-->
 <script setup lang='ts'>
 import { computed, onMounted, ref } from 'vue'
 import { NSpin } from 'naive-ui'
@@ -44,7 +52,7 @@ onMounted(() => {
       <h2 class="text-xl font-bold">
         Version - {{ pkg.version }}
       </h2>
-      <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
+      <!-- <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p>
           此项目开源于
           <a
@@ -59,7 +67,7 @@ onMounted(() => {
         <p>
           如果你觉得此项目对你有帮助，请在 Github 帮我点个 Star 或者给予一点赞助，谢谢！
         </p>
-      </div>
+      </div> -->
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
         {{ $t("setting.balance") }}：{{ config?.balance ?? '-' }}
